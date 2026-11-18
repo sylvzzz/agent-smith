@@ -11,5 +11,7 @@ if __name__ == "__main__":
             prompt = input("\nYou: ")
             history = agent(prompt, history)
 
-    except KeyboardInterrupt:
-        print("\nThank you for using agent-smith!")
+    except KeyboardInterrupt as error:
+        print(f"\nThank you for using agent-smith!")
+    except Exception as error:
+        print(f"Something went wrong ... {error}")

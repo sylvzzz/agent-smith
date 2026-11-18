@@ -1,0 +1,7 @@
+services:
+  agent:
+    container_name: agent-smith
+    image: agent
+    build: .
+    stdin_open: true
+    tty: true
